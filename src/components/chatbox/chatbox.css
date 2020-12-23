@@ -1,0 +1,169 @@
+.msger {
+  width: 100%;
+  height: 100%;
+  border: var(--border);
+  border-radius: 5px;
+  background: var(--msger-bg);
+}
+
+.msger-chat {
+  padding: 10px;
+}
+
+.msger-chat::-webkit-scrollbar {
+  width: 6px;
+}
+
+.msger-chat::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+.msger-chat::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+}
+
+.msg {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.msg:last-of-type {
+  margin: 0;
+}
+
+.msg-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  background: #ddd;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.msg-bubble {
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 15px;
+  background: var(--left-msg-bg);
+  font-size: 13px;
+}
+/* .left-msg > .msg-info {
+  float: left;
+  position: relative;
+  top: 15px;
+  left: 0;
+}
+
+.right-right > .msg-info {
+  float: right;
+  position: relative;
+  top: 15px;
+  left: 0;
+} */
+
+.msg-info-time {
+  font-size: 0.65em;
+}
+
+.left-msg .msg-bubble {
+  border-bottom-left-radius: 0;
+  background-color: #ebe3ee;
+}
+
+.right-msg {
+  flex-direction: row-reverse;
+}
+
+.right-msg .msg-bubble {
+  background: var(--right-msg-bg);
+  color: #fff;
+  border-bottom-right-radius: 0;
+  background-color: rebeccapurple;
+}
+
+.right-msg .msg-img {
+  margin: 0 0 0 10px;
+}
+
+.msger-inputarea {
+  display: flex;
+  padding: 6px;
+  border-top: var(--border);
+  bottom: 55px;
+  position: fixed;
+  border-radius: 30px;
+  width: 96%;
+  outline: none;
+  height: auto;
+  background: lightgrey;
+}
+
+textarea:focus {
+  border: none;
+  outline: none;
+}
+
+.msger-inputarea * {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+}
+
+.msger-input {
+  flex: 1;
+  background: inherit;
+  outline: none;
+}
+
+.msger-send-btn {
+  margin-left: 10px;
+  background: rebeccapurple;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.23s;
+  border-radius: 50%;
+}
+
+.msger-send-btn:hover {
+  background: mediumpurple;
+}
+
+.msger-chat {
+  background-color: #fcfcfe;
+}
+.friend-name {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+.chat-header {
+  padding: 0 15px;
+}
+
+.indicator-p {
+  margin: 0;
+  padding: 0 27px;
+}
+.indicator {
+  height: 6px;
+  width: 6px;
+  position: absolute;
+  border-radius: 50%;
+  margin: 5px;
+}
+.active {
+  background: green;
+}
+.inactive {
+  background: grey;
+}
+
+.indicator-text {
+  font-size: 12px;
+  font-weight: lighter;
+}

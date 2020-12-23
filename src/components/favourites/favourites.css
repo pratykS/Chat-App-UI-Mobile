@@ -1,0 +1,31 @@
+.favorites-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: auto;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+li {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: inline-block;
+  position: relative;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  background: transparent;
+}
+
+li:nth-child(n + 2) {
+  margin-left: 20px;
+}

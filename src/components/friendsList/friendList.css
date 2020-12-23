@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+.profile {
+  display: flex;
+}
+
+.friends-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.friends-container::-webkit-scrollbar {
+  width: 4px;
+}
+.friends-container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fc4236;
+}
+.friends-container::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #ebebeb;
+}
+
+.profile {
+  position: relative;
+  align-items: center;
+  margin-right: 20px;
+}
+.profile--padding {
+  padding: 10px;
+}
+.profile__img {
+  position: relative;
+  margin-right: 20px;
+}
+
+.profile__img img {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+}
+.profile__options {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.profile__info {
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+
+.profile__info__name {
+  color: #484848;
+  font-size: 14px;
+}
+.profile__info__message {
+  color: #a4a4a4;
+  font-size: 12px;
+  margin-top: 7px;
+  width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.chat-time {
+  float: right;
+  font-size: 12px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  font-weight: lighter;
+}
+
+.unseen-chat {
+  float: right;
+  font-size: 12px;
+  position: absolute;
+  top: 42px;
+  right: 0px;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 16px;
+  color: white;
+  background: mediumslateblue;
+}

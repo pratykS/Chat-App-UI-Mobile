@@ -1,0 +1,24 @@
+.box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 50px;
+}
+.box .search-input {
+  height: 46px;
+  font-size: 14px;
+  padding: 4px 0 0;
+  display: block;
+  margin-top: 20px;
+  min-height: 48px;
+  border-radius: 6px;
+  width: 10%;
+  padding: 0 8px;
+  outline: none;
+  border: none;
+  transition: width 1s;
+}
+.search-input:focus {
+  width: 99%;
+  border: 1px solid lightgray;
+}
