@@ -8,7 +8,7 @@ const ChatBoxComponent = (props) => {
     goBack(false);
   };
 
-  console.log(data);
+  // console.log(data);
 
   const friend = data[0].id ? getFriend(data[0].id) : null;
   return (

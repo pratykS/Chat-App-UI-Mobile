@@ -92,7 +92,7 @@
   display: flex;
   padding: 6px;
   border-top: var(--border);
-  bottom: 55px;
+  bottom: 10px;
   position: fixed;
   border-radius: 30px;
   width: 96%;
